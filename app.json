@@ -1,33 +1,50 @@
 {
-  "expo": {
-    "name": "AwesomeProject",
-    "slug": "AwesomeProject",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
-  }
+	"expo": {
+		"name": "My Recipe Book",
+		"slug": "myRecipeBook",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "light",
+		"backgroundColor": "#24180f",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"buildNumber": "1.0.0",
+			"supportsTablet": true,
+			"bundleIdentifier": "com.neville98.myrecipebook"
+		},
+		"android": {
+			"versionCode": 1,
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#FFFFFF"
+			},
+			"package": "com.neville98.myrecipebook"
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		},
+		"extra": {
+			"eas": {
+				"projectId": "4230c453-5dd7-45bb-a3cd-c8e6ee754c3a"
+			}
+		},
+		"plugins": [
+			[
+				"expo-notifications",
+				{
+					"icon": "./local/assets/notification-icon.png",
+					"color": "#ffffff"
+				}
+			]
+		]
+	}
 }
